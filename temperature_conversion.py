@@ -24,3 +24,21 @@ else:
 
 # print final result
 print(f"Temperature: {result}({measurement})")
+
+"""
+n = float(input("Enter temperature: \n"))
+unit = input("Enter unit\n('c' for centigrade, 'f' for fahrenheit): \n")
+result_unit = ''
+result = ''
+if unit.lower() == "f":
+    result = float(((n - 32) * 5) / 9)
+    result_unit = "centigrade"
+elif unit.lower() == "c":
+    result = float(((9 * n) + 160) / 5)
+    result_unit = 'fahrenheit'
+else:
+    result = "oops...Invalid unit!"
+    result_unit = 'invalid unit'
+
+print("Temperature in " + result_unit + " is: " + str(result))
+"""
