@@ -8,6 +8,17 @@ dict1 = {1: 1, 2: 2, 'x': 10}
 dict1['x'] = 0
 dict1.pop(1)
 print(dict1['x'])
+print(dict1.items())
 
 # get returns None if the key does not exist, else returns the value of the key
 print(dict1.get(1))
+
+###
+dict2 = {
+    'name': "He Who Must Not be Named",
+    'age': 21,
+    'salary': 104_000
+}
+
+for key, value in dict2.items():
+    print(f'{key}: {value}')
