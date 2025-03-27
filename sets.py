@@ -59,3 +59,71 @@ print("Difference using difference(): ", A.difference(B))
 # Checking if 2 sets are equal
 if A == B:
     print(A)
+
+"""# Write a program that accepts user input to create a list of integers.
+# Then compute the sum of all the integers in the list.
+
+my_list = []
+list_length = int(input("Enter length of list: "))
+total = 0
+for i in range(list_length):
+    n = int(input(f"Enter element in index {i}: "))
+    my_list.append(n)
+    # sum += n
+total = sum(my_list)
+print("New List: ",my_list)
+print("Sum of items is: ", total)"""
+
+"""my_tuple = "Harry Potter", "Goosebumps", "Lord of the Rings",
+
+for i in my_tuple:
+    print(i, end="\n")"""
+"""# Write a program that uses a dictionary to store information about a person, such as their name, age, and favorite color. Ask the user for input and store the information in the dictionary. Then, print the dictionary to the console.
+my_dict = {"name": "", "age": "", "fav_color": ""}
+print(my_dict["name"])
+for key, value in my_dict.items():
+    n = input(f"Enter value for {key}: ")
+    my_dict[key] = n
+print(my_dict)"""
+
+"""# Write a program that accepts user input to create two sets of integers. Then, create a new set that contains only the elements that are common to both sets.
+
+set1 = set()
+set2 = set()
+n1 = int(input("Enter length of set 1: "))
+n2 = int(input("Enter length of set 2: "))
+
+for i in range(n1):
+    n = input(f"Set1: Enter element number {i + 1}: ")
+    set1.add(n)
+print(set1)
+
+for i in range(n2):
+    n = input(f"Set2: Enter element number {i + 1}: ")
+    set2.add(n)
+print(set2)
+
+print(set1 & set2)"""
+
+# Create a program that stores a list of words. Then, use list comprehension to create a new list that contains only the words that have an odd number of characters.
+my_list = ["item1", "item2", "item3", "item4", "item5", 'whoever', 'whatever']
+int_list = []
+"""
+for i in my_list:
+    for j in i:
+        if j.isdigit():
+            int(j)
+            int_list.append(j)
+print(int_list)"""
+
+for word in my_list:
+    for letter in word:
+        if letter.isdigit():
+            int_list.append(word)
+# print(int_list)
+
+# List comprehension
+
+
+new_list = [word for word in my_list if any(letter.isdigit() for letter in word)]
+print(new_list)
