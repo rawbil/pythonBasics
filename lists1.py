@@ -5,7 +5,7 @@ choose = random.choice(myList)
 print(choose)
 """
 
-myList = [1, 34, 85, 58]
+"""myList = [1, 34, 85, 58]
 print(myList[:])  # creates a copy of the list from beginning to end
 print(myList[::2])  # alternates the elements at intervals of 2
 
@@ -23,4 +23,4 @@ L1.sort()
 print(L1)
 # reverse sort
 L1.sort(reverse=True)
-print(L1)
+print(L1)"""
